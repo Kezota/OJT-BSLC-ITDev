@@ -8,4 +8,199 @@
 
 body {
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  ::selection {
+    background-color: var(--green-tosca);
+    color: white;
+  }
+}
+
+.container {
+  padding: 20px 10rem;
+  margin-bottom: 50px;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    img {
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      a {
+        color: var(--black);
+        font-size: 26px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: var(--green-tosca);
+        }
+      }
+    }
+  }
+}
+
+/* HERO SECTION */
+section.hero {
+  display: flex;
+  justify-content: space-between;
+
+  .hero-content {
+    max-width: 50%;
+    h1 {
+      font-size: 60px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      font-weight: 500;
+
+      span {
+        color: var(--green-tosca);
+      }
+    }
+
+    p {
+      font-size: 32px;
+      text-align: justify;
+      line-height: 43.57px;
+    }
+  }
+
+  .hero-image {
+  }
+}
+
+/* NINDYA SECTION */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 40%;
+  text-align: justify;
+  align-items: center;
+
+  .card-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img {
+      height: 80px;
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: 600;
+    }
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 20px;
+      color: #262626;
+      line-height: 32px;
+    }
+
+    button {
+      padding: 15px 30px;
+      background-color: var(--green-tosca);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #0f7a73;
+      }
+    }
+  }
+}
+section.nindya {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MENTOR-MENTEE SECTION */
+section.mentor-mentee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* VIDEO SECTION */
+section.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #15191e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10rem;
+  margin-top: 30px;
+
+  .contact-us {
+    h4 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: var(--green-tosca);
+        }
+      }
+    }
+  }
 }
