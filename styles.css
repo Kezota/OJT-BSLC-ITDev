@@ -152,6 +152,7 @@ section.mentor-mentee {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 /* VIDEO SECTION */
@@ -178,7 +179,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 40px 10rem;
-  margin-top: 30px;
+  margin-top: 50px;
 
   .contact-us {
     h4 {
